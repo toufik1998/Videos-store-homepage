@@ -1,0 +1,117 @@
+/* styling the navbar*/
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+nav.navbar{
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav.navbar .nav_brand a{
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    margin: 1rem;
+    color: #000;
+}
+
+nav.navbar .nav_brand a:hover,
+nav.navbar .nav_brand a:focus{
+    background-color: #000;
+    color: #fff;
+    padding: 1rem 2rem;
+    color: #fff;
+    text-decoration: none;
+    transition: all ease-in-out .3s;
+}
+
+nav.navbar .nav_links ul{
+    display: flex;
+    list-style: none;
+}
+
+
+nav.navbar .nav_links ul li {
+    margin-right: 3rem;
+}
+
+nav.navbar .nav_links ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+/* styling the pagination */
+
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    margin-left: 2rem;
+}
+
+ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+}
+
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+
+ul.breadcrumb li a {
+    color: #000;
+    text-decoration: none;
+}
+
+ul.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+}
+
+/* styling the main sections */
+main section.good-price{
+    margin-left: 2.5rem;
+    width: 50%;
+    margin-bottom: 2rem;
+}
+
+/* styling the section of all products */
+main section.products{
+    margin-left: 2.5rem;
+    margin-bottom: 2rem;
+    display: flex;
+
+}
+
+main section.products .card{
+    border: 2px solid #eee;
+    padding: 1rem;
+    margin: 0 1rem 0 0;
+    height: fit-content;
+}
+
+main section.products .card .img{
+    height: 10rem;
+    width: 10rem;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+main section.products .card .card-body .card-text-rap{
+    color: rgb(140, 136, 136);
+    text-transform: uppercase;
+}
+
+main section.products .card .card-body .card-saving{
+    color: rgb(24, 177, 24);
+}
